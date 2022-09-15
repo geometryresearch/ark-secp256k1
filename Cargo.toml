@@ -1,0 +1,21 @@
+[package]
+name = "secp256k1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ark-ff = "0.3.0"
+ark-ec = "0.3.0"
+ark-std = "0.3.0"
+ark-algebra-test-templates = "0.3.0"
+ark-serialize = "0.3.0"
+hex = "0.4"
+
+[patch.crates-io]
+ark-ec = { git = "https://github.com/FindoraNetwork/ark-algebra" }
+ark-ff = { git = "https://github.com/FindoraNetwork/ark-algebra" }
+ark-serialize = { git = "https://github.com/FindoraNetwork/ark-algebra" }
+ark-algebra-test-templates = { git = "https://github.com/FindoraNetwork/ark-algebra" }
+ark-std = { git = "https://github.com/FindoraNetwork/ark-std" }
